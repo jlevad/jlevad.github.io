@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Squad Of Team</title>
+    <meta name="description" content="My first PWA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00897B" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+       <!-- Navigasi -->
+    <nav class="teal lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo" id="logo-container">Squad</a>
+        <a href="./index.html" class="sidenav-trigger" data-target="nav-mobile">
+          <i class="material-icons">arrow_back</i>
+        </a>
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+    <div class="container" id="body-content">
+      <div class="card z-depth-1">
+        <div class="row" id="teams"></div>
+        <div class="row">
+          <div class="col s4 m4 l4 teal darken-3 white-text">Name</div>
+          <div class="col s4 m4 l4 teal darken-3 white-text">Position</div>
+          <div class="col s4 m4 l4 teal darken-3 white-text">Nationality</div>
+        </div>
+        <div class="row teal lighten-2" id="squad"></div>
+      </div>
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red waves-effect waves-light" id="favorite">
+          <i class="large material-icons">favorite_border</i>     
+        </a>
+      </div>
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red waves-effect waves-light" id="delete">
+          <i class="large material-icons">delete</i>     
+        </a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer teal">
+      <div class="container">
+          <div class="row">
+              <div class="col l6 s12">
+                  <h5 class="white-text">Explore Kene Sport Reader</h5>
+                  <p class="grey-text text-lighten-4"> Kene Sport Reader is not responsible for the content of external sites.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Follow Us</h5>
+                  <ul>
+                      <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                      <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <div class="container">
+              © 2020 Copyright Made With &#10084 by Miftakhus Salam
+              <a class="grey-text text-lighten-4 right" href="#!"> Read about our approach to external linking.</a>
+          </div>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"
+    ></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/squad.js"></script>
+  </body>
+</html>
