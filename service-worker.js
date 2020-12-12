@@ -44,7 +44,7 @@ workbox.routing.registerRoute(
                 statuses: [200],
             }),
             new workbox.expiration.Plugin({
-                maxAgeSeconds: 60 * 60 * 24 *365,
+                maxAgeSeconds: 60 * 60 * 24 *7,
                 maxEntries: 30,
             }),
         ]
@@ -65,7 +65,7 @@ workbox.routing.registerRoute(
         cacheName: 'image-cache',
         plugins: [
             new workbox.expiration.Plugin({
-                maxAgeSeconds: 60 * 60 * 24 * 30, //30 hari
+                maxAgeSeconds: 60 * 60 * 24 * 7, //7 hari
                 maxEntries:60,
             }),
         ],
